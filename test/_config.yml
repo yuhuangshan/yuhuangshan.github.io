@@ -1,9 +1,13 @@
+
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
+
+## !USE TEXT THEME
+theme: jekyll-text-theme
 #
 # ,--------.      ,--.   ,--. ,--.
 # '--.  .--',---.  \  `.'  /,-'  '-.
@@ -11,14 +15,12 @@
 #    |  |  \   --. /  .'.  \  |  |
 #    `--'   `----''--'   '--' `--'
 
-# config file for development, DELETE IT IF YOU WANT.
-
 ## Base settings ##
 # url:  #the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl: /
-title: 玉皇山脚砍柴人
+title: Someone's blog
 description: > #this means to ignore newlines until "nav_lists:"
-  玉皇山脚砍柴人
+  Someone's Blog
 
 nav_lists:
   - titles:
@@ -28,31 +30,31 @@ nav_lists:
       zh-Hant: 關於
     url: /about.html
 
-paths:
-  base: /
-  home: /
-  all:  /all.html
-  rss:  /feed.xml
+# paths:
+#   base: /
+#   home: /
+#   all:  /all.html
+#   rss:  /feed.xml
 
 ## GitHub repository (if the site is hosted by GitHub) ##
-repository: yuhuangshan/yuhuangshan.github.io
-repository_tree: master
+# repository:  #e.g. someone/someone.github.io
+# repository_tree:  #e.g. master
 
 ## Language & timezone ##
-lang: zh #the language of your site, eg: en(English), zh(简体中文), zh-Hans(简体中文), zh-Hant(繁體中文)
+lang: en #the language of your site, eg: en(English), zh(简体中文), zh-Hans(简体中文), zh-Hant(繁體中文)
 timezone: Asia/Shanghai #see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
 
 ## Author & social ##
 author:
-  name: 玉皇山脚砍柴人
-  email: yuanzhao.xyc@cainiao.com  #your Email address e.g. someone@site.com
-  facebook:   #your Facebook username
-  twitter:   #your Twitter username
-  github: yuhuangshan  #your GitHub username
-  googleplus:   #your Google+ username
-  weibo:   #your Weibo username
-  douban:   #your Douban username
-  linkedin:   #your Linkedin username
+  name: Someone
+  # email:  #your Email address e.g. someone@site.com
+  # facebook:  #your Facebook username
+  # twitter:  #your Twitter username
+  # github:  #your GitHub username
+  # googleplus:  #your Google+ username
+  # weibo:  #your Weibo username
+  # douban:  #your Douban username
+  # linkedin:  #your Linkedin username
 
 ## Comment system (Disqus) ##
 disqus:
@@ -61,21 +63,21 @@ disqus:
 ## Comment system (gitalk) ##
 # please refer to https://github.com/gitalk/gitalk for more info.
 gitalk:
-  clientID: 7a0e3e30486ec42620e5 #Github Application Client ID
-  clientSecret: 693c2eafa465118d14bc4af9c5466ddb26f4aa6c #Github Application Client Secret
-  repository: yuhuangshan.github.io #Github repo
-  owner: yuhuangshan #Github repo owner
-  admin:  #Github repo owner and collaborators, only these guys can initialize github issues, IT IS A LIST.
-    - yuhuangshan
+  # clientID:  #Github Application Client ID
+  # clientSecret:  #Github Application Client Secret
+  # repository:  #Github repo
+  # owner:  #Github repo owner
+  # admin: #Github repo owner and collaborators, only these guys can initialize github issues, IT IS A LIST.
+    # - owner
 
 ## Google Analytics ##
 # ga_tracking_id:  #Google analytics id for the site
 
 ## Reading quantity (LeanCloud) ##
 leancloud:
-  app_id:  bxOIvmnlQBvNWnSep024pWX1-gzGzoHsz#LeanCloud App id
-  app_key: KY3BEAGeC5Nj6qoJ6lBhIfOO #LeanCloud App key
- #app_class:  #LeanCloud App class
+  # app_id:  #LeanCloud App id
+  # app_key:  #LeanCloud App key
+  # app_class:  #LeanCloud App class
 
 # mathjax: true
 
@@ -85,7 +87,7 @@ paginate_path: /blog/page:num
 
 ## Post excerpts ##
 excerpt_separator: <!--more-->
-excerpt_type: html # text | html
+excerpt_type: text # text | html
 
 ## Build ##
 markdown: kramdown
@@ -111,7 +113,7 @@ exclude:
   - /vendor
 
 ## Plugins ##
-plugins:
+gems:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-paginate
