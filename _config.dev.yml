@@ -27,8 +27,6 @@ nav_lists:
       zh-Hans: 关于
       zh-Hant: 關於
     url: /about.html
-  - title: Baidu
-    url: https://www.baidu.com
 
 paths:
   base: /
@@ -48,9 +46,9 @@ timezone: Asia/Shanghai #see https://en.wikipedia.org/wiki/List_of_tz_database_t
 author:
   name: 玉皇山脚砍柴人
   email: yuanzhao.xyc@cainiao.com  #your Email address e.g. someone@site.com
-  facebook: someone  #your Facebook username
-  twitter: someone  #your Twitter username
-  github: someone  #your GitHub username
+  facebook:   #your Facebook username
+  twitter:   #your Twitter username
+  github: yuhuangshan  #your GitHub username
   googleplus:   #your Google+ username
   weibo:   #your Weibo username
   douban:   #your Douban username
@@ -63,21 +61,25 @@ disqus:
 ## Comment system (gitalk) ##
 # please refer to https://github.com/gitalk/gitalk for more info.
 gitalk:
-  clientID: 143666b578a416f82175 #Github Application Client ID
-  clientSecret: 1d1c0604a1a4bff9b59ab7f56724dc0e8b837775 #Github Application Client Secret
-  repository: gitalk-demo #Github repo
-  owner: kitian616 #Github repo owner
+  clientID: 7a0e3e30486ec42620e5 #Github Application Client ID
+  clientSecret: 693c2eafa465118d14bc4af9c5466ddb26f4aa6c #Github Application Client Secret
+  repository: yuhuangshan.github.io #Github repo
+  owner: yuhuangshan #Github repo owner
   admin:  #Github repo owner and collaborators, only these guys can initialize github issues, IT IS A LIST.
-    - kitian616
+    - yuhuangshan
 
 ## Google Analytics ##
 # ga_tracking_id:  #Google analytics id for the site
 
 ## Reading quantity (LeanCloud) ##
+
 leancloud:
-  # app_id:  #LeanCloud App id
-  # app_key:  #LeanCloud App key
-  # app_class:  #LeanCloud App class
+  app_id:  bxOIvmnlQBvNWnSep024pWX1-gzGzoHsz #LeanCloud App id
+  app_key: KY3BEAGeC5Nj6qoJ6lBhIfOO #LeanCloud App key
+  app_class: yuhuangshan #LeanCloud App class
+
+custom:
+  name: yuanzhao
 
 # mathjax: true
 
@@ -109,7 +111,7 @@ exclude:
   - /docs
   - /node_modules
   - /screenshots
-  # - /test
+  - /test
   - /vendor
 
 ## Plugins ##
